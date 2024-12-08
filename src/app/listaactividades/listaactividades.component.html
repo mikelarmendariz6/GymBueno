@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <h1>Listado de Actividades</h1>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let actividad of actividades">
+        <h5>{{ actividad.nombre }}</h5>
+        <p>{{ actividad.descripcion }}</p>
+      </li>
+    </ul>
+  </div>
+  
