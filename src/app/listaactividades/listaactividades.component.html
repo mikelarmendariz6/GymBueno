@@ -1,9 +1,11 @@
 <div class="container mt-4">
-    <h1>Listado de Actividades</h1>
+    <h2 class="mb-4">Listado de Actividades</h2>
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let actividad of actividades">
+      <li *ngFor="let actividad of actividades" class="list-group-item">
         <h5>{{ actividad.nombre }}</h5>
-        <p>{{ actividad.descripcion }}</p>
+        <p><strong>Fecha:</strong> {{ actividad.fecha }}</p>
+        <p><strong>Aula:</strong> {{ actividad.aula }}</p>
+        <p><strong>Monitor:</strong> {{ actividad.monitor }}</p>
       </li>
     </ul>
   </div>
